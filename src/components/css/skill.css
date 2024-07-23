@@ -1,0 +1,97 @@
+/* Skills.css */
+
+.skills {
+  padding: 50px 20px;
+  background-color: #7a7c85;
+  text-align: center;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  border-radius: 8px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills-category {
+  background: #acd7f869;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  margin: 10px;
+  max-width: 400px;
+}
+
+.skills-category h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #00095c;
+  border-bottom: 5px solid #00095c;
+}
+
+.skills-category ul {
+  list-style:none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-category li {
+  font-size: 1.1em;
+  margin: 5px 0;
+  padding: 5px;
+  background: #badcf569;
+  border-radius: 4px;
+  color: #042735;
+}
+
+@media (max-width: 768px) {
+  .skills-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-category {
+    max-width: 100%;
+  }
+}
+
+.resume-buttons {
+  padding-top: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+.download-button {
+  padding: 8px 16px;
+  background-color: #112d4b;
+  height: 50px;
+  color: #daedf8;
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #101317;
+}

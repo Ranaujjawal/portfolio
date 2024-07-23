@@ -1,0 +1,244 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7a7c85;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .floating-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none; /* Prevent interaction with icons */
+  }
+  .floating-icons img{
+    width: 100px;
+    height: auto;
+  }
+  /* .icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+    animation: float 10s infinite;
+  } */
+  
+  .cpp-icon {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    animation: float-cpp 10s infinite;
+  }
+  
+  @keyframes float-cpp {
+    0% { transform: translateY(0px) translateX(0px); }
+    25% { transform: translateY(-10px) translateX(-10px); }
+    50% { transform: translateY(10px) translateX(-10px); }
+    75% { transform: translateY(-10px) translateX(10px); }
+    100% { transform: translateY(0px) translateX(0px); }
+  }
+  
+  .javascript-icon {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    animation: float-javascript 15s infinite;
+  }
+  
+  @keyframes float-javascript {
+    0% { transform: translateY(0px) translateX(0px); }
+    25% { transform: translateY(15px) translateX(15px); }
+    50% { transform: translateY(-15px) translateX(-15px); }
+    75% { transform: translateY(15px) translateX(15px); }
+    100% { transform: translateY(0px) translateX(0px); }
+  }
+  
+  .csharp-icon {
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    animation: float-csharp 20s infinite;
+  }
+  
+  @keyframes float-csharp {
+    0% { transform: translateY(0px) translateX(0px); }
+    25% { transform: translateY(-20px) translateX(-20px); }
+    50% { transform: translateY(20px) translateX(20px); }
+    75% { transform: translateY(-20px) translateX(-20px); }
+    100% { transform: translateY(0px) translateX(0px); }
+  }
+  
+  .react-icon {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    animation: float-react 10s infinite;
+  }
+  
+  @keyframes float-react {
+    0% { transform: translateY(0px) translateX(0px); }
+    25% { transform: translateY(10px) translateX(-10px); }
+    50% { transform: translateY(-10px) translateX(10px); }
+    75% { transform: translateY(10px) translateX(-10px); }
+    100% { transform: translateY(0px) translateX(0px); }
+  }
+  
+  .nodejs-icon {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    animation: float-nodejs 20s infinite;
+  }
+  
+  @keyframes float-nodejs {
+    0% { transform: translateY(0px) translateX(0px); }
+    25% { transform: translateY(-20px) translateX(10px); }
+    50% { transform: translateY(20px) translateX(10px); }
+    75% { transform: translateY(-20px) translateX(10px); }
+    100% { transform: translateY(0px) translateX(0px); }
+  }
+  
+  .css-icon {
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    animation: float-css 15s infinite;
+  }
+  
+  @keyframes float-css {
+    0% { transform: translateY(0px) translateX(0px); }
+    25% { transform: translateY(-15px) translateX(15px); }
+    50% { transform: translateY(15px) translateX(15px); }
+    75% { transform: translateY(-15px) translateX(-15px); }
+    100% { transform: translateY(0px) translateX(0px); }
+  }
+  
+  .html-icon {
+    position: absolute;
+    top: 60%;
+    left: 90%;
+    animation: float-html 10s infinite;
+  }
+  
+  @keyframes float-html {
+    0% { transform: translateY(0px) translateX(0px); }
+    25% { transform: translateY(-10px) translateX(10px); }
+    50% { transform: translateY(10px) translateX(10px); }
+    75% { transform: translateY(-10px) translateX(-10px); }
+    100% { transform: translateY(0px) translateX(0px); }
+  }
+  
+  
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    z-index: 2; /* Ensure the content is above the icons */
+  }
+  
+  .hero-image {
+    flex: 1;
+     /*background-color: rgba(255, 255, 255, 0.2); Add a semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+  }
+  
+  .hero-image img {
+    max-width: 90%;
+    height: auto;
+    border: 10px solid rgba(255, 255, 255, 0.2);;
+    /* Adjust the width of the image */
+    border-radius: 5px;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .hero-content {
+    flex: 2;
+    padding: 20px;
+    color: #1A3636;
+    text-align: left;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #48cae4;
+    font-family: serif;
+    font-weight: 200;
+    border-bottom: 3px solid #2f3663;
+  }
+
+  
+  .hero-content p {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  margin-top: 0; /* Ensure there is no margin above the paragraph */
+  margin-bottom: 0; /* Ensure there is no margin below the paragraph */
+  color: #324b56;
+  text-align: center;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-container {
+      padding-top: 50px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-image img {
+      
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 200px; /* Adjust max-width for smaller screens */
+    }
+  
+    .hero-content {
+      margin-top: 20px;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.875rem;
+    }
+  }
+  

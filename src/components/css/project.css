@@ -1,0 +1,76 @@
+/* project.css */
+
+.project-card {
+    max-width: 300px; /* Adjust as needed for your card width */
+    margin: 20px;
+    border: 3px solid #9fe2ea;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #4b4d54;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-image {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust as needed for your card height */
+    overflow: hidden;
+  }
+  
+  .imagesize {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-image:hover .overlay {
+    opacity: 1;
+  }
+  
+  .project-links a {
+    margin: 0 10px;
+    padding: 8px 16px;
+    background-color: #42aee0;
+    color: #090808;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-links a:hover {
+    background-color: #0c0d0f;
+  }
+  
+  .project-details {
+    padding: 20px;
+  }
+  
+  .project-details h3 {
+    margin: 0 0 10px;
+    color: aqua;
+  }
+  
+  .project-details p {
+    margin: 0;
+    color: #fff;
+  }
+  

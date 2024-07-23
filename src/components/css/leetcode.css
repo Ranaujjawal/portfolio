@@ -1,0 +1,112 @@
+/* LeetCodeProfile.css */
+.leetcode-profile-link {
+    text-decoration: none;
+    color: inherit;
+  }
+.leetcode-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /* border: 1px solid #e0e0e0; */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    height: 400px;
+    background-color: #acd7f869;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .leetcode-profile:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #00095c;
+    /* border-radius: 50%; */
+    margin-bottom: 20px;
+    object-fit: cover;
+    
+  }
+  
+  .profile-details {
+    text-align: center;
+  }
+  
+  .profile-details h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #00095c;
+  }
+  .profile-details h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #00095c;
+  }
+  .profile-details p {
+    margin: 5px 0;
+    color: #042735;
+  }
+  
+  .solved-stats {
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .stat {
+    margin-bottom: 15px;
+  }
+  
+  .stat p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .progress-bar-container {
+    margin-top: 10px;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 5px;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #000;
+    border-radius: 5px 0 0 5px;
+    transition: width 0.3s ease;
+  }
+  
+  @media (min-width: 300px) {
+    .leetcode-profile {
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .profile-photo {
+      margin-right: 20px;
+    }
+  
+    .profile-details {
+      flex: 1;
+     
+    }
+  
+    .solved-stats {
+      margin-top: 0;
+    }
+    .stat{
+      font-size: 1rem;
+    }
+    .profile-details p{
+      line-height: 1rem;
+      
+    }
+  }
+  
